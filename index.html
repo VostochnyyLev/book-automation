@@ -9,29 +9,36 @@
 </head>
 
 <body>
-    <div id='book'></div>
+    <div id='article'></div>
 
     <script>
-        const founded = 'Мартином Эберхардом';
-        let company = ['Илона Маска', 'Джеффри Брайана Страубела', 'Иэна Райта'];
-        let companylist = company.join(', ');
-        let car = 3;
-        const name = {
-            transfiguration: '(Apple, Microsoft, Amazon и Alphabet)'
+        const companyFounder = 'Мартином Эберхардом';
+        const coFounders = ['Илона Маска', 'Джеффри Брайана Страубела', 'Иэна Райта'];
+        const coFoundersList = coFounders.join(', ');
+        const carNumber = 3;
+        const company = {
+            names: '(Apple, Microsoft, Amazon и Alphabet)'
         };
         const text = `
         <p> Tesla(ранее Tesla Motors) — американская компания, производитель электромобилей и (через свой филиал SolarCity) решений для хранения электрической энергии. </p >
-           
+        
+        <p>Tesla Model ${carNumber}</p>
 
-        <p>Компания была основана в июле 2003 года ${founded} и Марком Тарпеннингом, но нынешнее руководство компании называет сооснователями   ${companylist}.</p>
+        <p>Компания была основана в июле 2003 года ${companyFounder} и Марком Тарпеннингом, но нынешнее руководство компании называет сооснователями   ${coFoundersList}.</p>
+
+        <p>Tesla Model ${carNumber}</p>
 
         <p>В 2019 году Tesla стала крупнейшим производителем электромобилей в мире. Седан Tesla Model ${car} стал самым продаваемым электромобилем в истории, преодолев отметку 800 тысяч.</p>
 
-        <p>В 2021 году Tesla вышла на первое место по капитализации среди автомобильных компаний, обойдя японского автопроизводителя Toyota. В конце октября 2021 года капитализация Tesla впервые превысила 1 трлн долларов, ранее этой отметки достигали только 4 американские компании ${name.transfiguration}.
+        <p>Tesla Model ${carNumber}</p>
+
+        <p>В 2021 году Tesla вышла на первое место по капитализации среди автомобильных компаний, обойдя японского автопроизводителя Toyota. В конце октября 2021 года капитализация Tesla впервые превысила 1 трлн долларов, ранее этой отметки достигали только 4 американские компании ${company.names}.
+
+        <p>Tesla Model ${carNumber}</p>
 
         Названа в честь всемирно известного электротехника и физика Николы Теслы.</p>`;
 
-        document.getElementById('book').innerHTML = text;
+        document.getElementById('article').innerHTML = text;
     </script>
 </body>
 
